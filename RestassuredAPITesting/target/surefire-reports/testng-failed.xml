@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [RestAPISuite]">
+  <listeners>
+    <listener class-name="com.api.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="APITest(failed)">
+    <classes>
+      <class name="com.api.testCases.TC002_randomQuotes">
+        <methods>
+          <include name="checkResponseforQuotesbyCharacter"/>
+          <include name="randomQuotesSetup"/>
+          <include name="checkResponseforQuotesbyTitle"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.api.testCases.TC002_randomQuotes -->
+    </classes>
+  </test> <!-- APITest(failed) -->
+</suite> <!-- Failed suite [RestAPISuite] -->
